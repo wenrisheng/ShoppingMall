@@ -1,0 +1,21 @@
+整个项目采用maven+hibernate+spring+spring mvc架构
+版本控制：
+git:https://github.com/wenrisheng/shoppingmall.git
+
+各架构版本：
+jdk                       1.8
+maven                     3.3.3
+Eclipse Java EE IDE for Web Developers 4.2.2
+hibetrnate               4.3.6.Final
+spring                   4.0.6.RELEASE
+ 
+shoppingmall              maven父项目
+－shoppingmall-util        工具项目
+－shoppingmall-model       model层
+－shoppingmall-dao         dao层
+－shoppingmall-service     service层
+－shoppingmall-controller  controller层
+－shoppingmall-web         前台web层
+－shoppingmall-mgr         后台管理层
+－shoppingmall-app         移动接口层
+－shoppingmall-doc         项目说明文档   
