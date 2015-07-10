@@ -17,4 +17,8 @@ public class ControllerController {
 		map.put("name", "controller");
 		return map;
 	}
+	
+	public void sayHello() {
+		System.out.print("controller hello");
+	}
 }
