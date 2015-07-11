@@ -1,35 +1,36 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.wl.shoppingmall</groupId>
-    <artifactId>shoppingmall</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>shoppingmall-web</artifactId>
-  <packaging>war</packaging>
-  <dependencies>
-  <dependency>  
-        <groupId>org.codehaus.jackson</groupId>  
-        <artifactId>jackson-core-lgpl</artifactId>  
- 
-    </dependency>  
-    <dependency>  
-        <groupId>org.codehaus.jackson</groupId>  
-        <artifactId>jackson-core-asl</artifactId>  
-        
-    </dependency>  
-    <dependency>  
-        <groupId>org.codehaus.jackson</groupId>  
-        <artifactId>jackson-mapper-asl</artifactId>  
-        
-    </dependency>  
-    <dependency>  
-        <groupId>org.codehaus.jackson</groupId>  
-        <artifactId>jackson-mapper-lgpl</artifactId>  
-      
-    </dependency>  
-  
-  <!-- spring 4 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.wl.shoppingmall</groupId>
+		<artifactId>shoppingmall</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>shoppingmall-web</artifactId>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-lgpl</artifactId>
+
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-lgpl</artifactId>
+
+		</dependency>
+
+		<!-- spring 4 -->
 		<!-- spring 核心包 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -59,10 +60,10 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 		</dependency>
-<dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			</dependency>
+		</dependency>
 		<!-- 表达式语言 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -115,6 +116,25 @@
 			<artifactId>shoppingmall-controller</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-  </dependencies>
-  
+	</dependencies>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+			<plugin>
+				 <groupId>org.codehaus.mojo</groupId>  
+                <artifactId>tomcat-maven-plugin</artifactId>  
+			</plugin>
+
+		</plugins>
+	</build>
+
 </project>
